@@ -20,7 +20,8 @@ clusterManager({
     workers: 5,
     notify:{
         from:"from@address.com",
-        to:"recipient@address.com"
+        to:"recipient@address.com",
+        subjectPrefix:"SUBJECT PREFIX"
     }
 });
 ```
@@ -39,7 +40,7 @@ Below are the keys that can be set in the JSON object. They are all optional exc
     <dd>File to store the ID for the main process. Used to send signals to the cluster manager</dd>
 
     <dt>notify</dt>
-    <dd>Object with a from and to property. If set, the recipient will receive email notifications on events that affect the workers. To send notifications, it requires __/usr/lib/sendmail__.</dd>
+    <dd>Object with a <i>from</i>, <i>to</i> and <i>subjectPrefix</i> property. If set, the recipient will receive email notifications on events that affect the workers. To send notifications, it requires __/usr/lib/sendmail__.</dd>
 
     <dt>verbose</dt>
     <dd>Handles if the cluster-manager will be verbose in its messages. Default:false</dd>

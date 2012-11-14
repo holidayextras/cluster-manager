@@ -190,6 +190,9 @@ module.exports = ClusterManager = function ClusterManager(options){
                 process.exit(1);
             }
         });
+        process.on('exit',function(){
+            fs.unlinkSync(pidfile);
+        });
     }
 
     // Fork workers.
@@ -200,7 +203,7 @@ module.exports = ClusterManager = function ClusterManager(options){
 }
 
 function sendNotification(options, subject, message){
-    exec("echo 'From:" + options.from + "\nTo:" + options.to + "\nSubject: " + subject + "\n\n" + message + "\n.' | /usr/lib/sendmail -t",
+    exec("echo 'From:" + options.from + "\nTo:" + options.to + "\nSubject: [" + options.subjectPrefix + "]" + subject + "\n\n" + message + "\n.' | /usr/lib/sendmail -t",
         function (error, stdout, stderr) {
         }
     );
