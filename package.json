@@ -1,0 +1,22 @@
+{
+    "name": "cluster-manager",
+    "version": "0.0.1",
+    "description": "Manage cluster applications with email alerting on crash of worker",
+    "main": "ClusterManager.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:holidayextras/cluster-manager.git"
+    },
+    "keywords": [
+        "stream",
+        "express",
+        "connect",
+        "rotate",
+        "file"
+    ],
+    "author": "Roger Castells",
+    "license": "MIT"
+}
