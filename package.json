@@ -1,6 +1,6 @@
 {
   "name": "cluster-manager",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Manage cluster applications with email alerting on crash of worker",
   "main": "ClusterManager.js",
   "scripts": {
