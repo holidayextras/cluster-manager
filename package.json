@@ -1,19 +1,23 @@
 {
-    "name": "cluster-manager",
-    "version": "0.0.2",
-    "description": "Manage cluster applications with email alerting on crash of worker",
-    "main": "ClusterManager.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:holidayextras/cluster-manager.git"
-    },
-    "keywords": [
-        "cluster",
-        "notification",
-    ],
-    "author": "Roger Castells",
-    "license": "MIT"
+  "name": "cluster-manager",
+  "version": "0.0.2",
+  "description": "Manage cluster applications with email alerting on crash of worker",
+  "main": "ClusterManager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "node_modules/.bin/make-up && echo 'Linting: ✓'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:holidayextras/cluster-manager.git"
+  },
+  "keywords": [
+    "cluster",
+    "notification"
+  ],
+  "author": "Roger Castells",
+  "license": "MIT",
+  "devDependencies": {
+    "make-up": "6.0.0"
+  }
 }
