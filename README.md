@@ -86,6 +86,7 @@ The npm module for this library is maintained by:
 * [Roger Castells](http://github.com/rogerc)
 * [Viktor Trako](http://github.com/viktort)
 * [Dan Jenkins](http://github.com/danjenkins)
+* [Pedro Romano](http://github.com/hx-pedro-romano)
 
 ## License
 
